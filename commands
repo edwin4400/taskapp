@@ -1,0 +1,36 @@
+cd into the angular folder
+ng serve --host 0.0.0.0 --port 8081 --live-reload-port 8080
+ng new [name] creates a new angular application.
+
+ng generate [name] generates the specified blueprint
+class
+component
+directive
+enum
+guard
+interface
+module
+pipe
+service
+
+netstat -tulnap shows me what ports are in use
+
+@@@Add a git remote in the Cloud9 console. Should look like this (replace the git url with your repo url):
+
+1.Create a new git in github
+
+2. git remote add origin git@github.com:C9Support/testPush.git 
+
+3.Add files and commit them:
+git add . 
+git commit -m "First commit"
+
+4.Push to github:
+git push -u origin master
+
+installing mongodb into cloud9
+sudo apt-get install -y mongodb-org
+$ mkdir data
+$ echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
+$ chmod a+x mongod
+./mongod
